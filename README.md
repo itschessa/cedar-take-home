@@ -10,4 +10,4 @@
 Note:
 I think something isn't quite right with the jest + vite configuration so I haven't been able to get the jest tests to run. Given more time, hopefully I could figure out what's up, but apologies for that!
 
-Thanks for taking the time to check this out!
+Thanks for taking the time to check this out! :sparkles:
