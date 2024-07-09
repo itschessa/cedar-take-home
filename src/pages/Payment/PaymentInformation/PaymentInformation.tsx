@@ -8,7 +8,6 @@ function PaymentInformation({
   expanded,
   setExpandedSection,
 }: PaymentInformationProps) {
-
   const handleContinueClick = () => setExpandedSection(Section.Review);
 
   const handleEditClick = () => setExpandedSection(Section.Payment);
@@ -17,9 +16,12 @@ function PaymentInformation({
     <FormSectionHeader
       sectionNumber={1}
       status={expanded ? "active" : "inactive"}
-      // TODO style button as text button
       button={
-        expanded ? undefined : <Button onClick={handleEditClick}>Edit</Button>
+        expanded ? undefined : (
+          <Button onClick={handleEditClick} variant="text">
+            Edit
+          </Button>
+        )
       }
     >
       Payment information
