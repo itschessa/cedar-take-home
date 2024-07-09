@@ -6,6 +6,11 @@
     display: flex;
     flex-direction: column;
     background-color: #f2f8ff;
+
+    /* override default margins */
+    p, h1 {
+      margin: 0;
+    }
 }
 
 .logo {
