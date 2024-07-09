@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css, keyframes } from "styled-components";
 import { Styles } from "./tokens";
 
 enum TextSize {
@@ -59,5 +59,15 @@ const FlexColumn = css`
   flex-direction: column;
 `;
 
-export { TextSize, Text, HeadingText, FlexColumn };
+const SlideAnimation = keyframes`
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}`;
+
+export { TextSize, Text, HeadingText, FlexColumn, SlideAnimation };
 export type { TextProps };
