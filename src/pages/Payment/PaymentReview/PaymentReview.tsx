@@ -5,9 +5,9 @@ import { useContext } from "react";
 import { UserContext } from "../../../contexts/UserContext";
 import { ReviewSection } from "./styles";
 import { formatCurrency } from "../../../shared/util";
-import { PaymentSectionProps } from "../types";
+import { PaymentReviewProps } from "./types";
 
-function PaymentReview({ expanded }: PaymentSectionProps) {
+function PaymentReview({ expanded }: PaymentReviewProps) {
   const navigate = useNavigate();
   const { userData } = useContext(UserContext);
 
