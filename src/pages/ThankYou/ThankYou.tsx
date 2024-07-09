@@ -1,5 +1,7 @@
+import { Container } from "./styles";
+
 function ThankYou() {
-  return null;
+  return <Container>Thank you for your payment!</Container>;
 }
 
 export { ThankYou };
