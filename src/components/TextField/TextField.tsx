@@ -25,6 +25,7 @@ function TextField({
         aria-describedby={`${id}-error`}
         required
         $validationStatus={validationStatus}
+        min={0}
       />
       {validationStatus === ValidationStatus.Invalid && (
         <ErrorText id={`${id}-error`} $size="extraSmall">
